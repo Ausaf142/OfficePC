@@ -3,9 +3,7 @@
   <groupId>fkm.Rest</groupId>
   <artifactId>fkm.Rest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-<<<<<<< HEAD
-</project>
-=======
+
     <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
   <dependency>
@@ -61,4 +59,4 @@
 </project>
   
   
->>>>>>> c1f6088 (from company pc)
+

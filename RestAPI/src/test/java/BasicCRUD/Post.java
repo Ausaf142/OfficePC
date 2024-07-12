@@ -22,10 +22,8 @@ public static void main(String[] args) {
 	req.contentType(ContentType.JSON);
 	Response res = req.post("http://localhost:8084/addProject");
 	res.then().log().all(); 
-<<<<<<< HEAD
+
 	System.out.println("update from github");
-=======
->>>>>>> c1f6088 (from company pc)
-	
+
 }
 }

@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 import GenericUtility.Base;
 import GenericUtility.Base_Class;
 
-public class DDTFromExcel {
+public class DDTFromExcel extends Base_Class{
 	@Test 
 	public void DDT() throws EncryptedDocumentException, IOException  {
 	     WebDriver driver =new ChromeDriver() ;     

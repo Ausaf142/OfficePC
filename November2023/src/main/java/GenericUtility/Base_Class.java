@@ -15,18 +15,18 @@ public class Base_Class {
 public static WebDriver driver; 
 public  WebDriver edriver =null;
 
-@BeforeMethod
-public void BM() {
-	driver=new ChromeDriver();
-	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	
-	driver.get("http://localhost:8888/");
-	 edriver = driver;
-}
+//@BeforeMethod
+//public void BM() {
+//	driver=new ChromeDriver();
+//	driver.manage().window().maximize();
+//	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//	
+//	driver.get("http://localhost:8888/");
+//	 edriver = driver;
+//}
 /*Humlog ka Apna Program hai*/
 
-/*@Parameters("BROWSER")
+@Parameters("BROWSER")
 @BeforeMethod
 public void BM(String BROWSER) {
 	if(BROWSER.equalsIgnoreCase("chrome")) {
@@ -40,6 +40,6 @@ public void BM(String BROWSER) {
 	else {
 		System.out.println("error found");
 	}
-}*/
+}
 
 }

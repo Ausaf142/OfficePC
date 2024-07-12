@@ -37,6 +37,7 @@ public class CadburyDemo  {
 			driver.navigate().refresh();
 //			System.out.println(i);
 //			System.out.println(j);
+		
 		}
 		
 		System.out.println("terminate");

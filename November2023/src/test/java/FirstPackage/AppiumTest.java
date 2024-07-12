@@ -3,27 +3,53 @@ package FirstPackage;
 import io.appium.java_client.AppiumDriver;
 //import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.net.URI;
 import java.net.URL;
+
+import org.asynchttpclient.uri.Uri;
+import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.FindBy;
+
+
+
 
 public class AppiumTest {
 
     public static void main(String[] args) throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("deviceName", "Xiaomi Redmi Note 5 pro");
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("platformVersion", "13.0");
-        capabilities.setCapability("deviceName", "Pixel_3_API_30");
-        capabilities.setCapability("app", "C:\\Users\\Dell\\.android\\avd\\Pixel_7_Pro_API_30.avd");
-        capabilities.setCapability("automationName", "UiAutomator2");
-    
-
+        capabilities.setCapability("automationName", "uiautomator2");
+        capabilities.setCapability("platformVersion", "9");
+//        capabilities.setCapability("app", "C:\\Users\\Dell\\Downloads\\appfkm.apk");
+        System.out.println("Application started");
+        capabilities.setCapability("appPackage", "com.freekaamaalindia");
+        capabilities.setCapability("appActivity", "com.freekaamaalindia.MainActivity");
+        System.out.println("Application started");
+        	URL url = URI.create("http://127.0.0.1:4723").toURL();
+        	System.out.println("Application started");
         // Initialize the driver
-        AppiumDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-
+         AndroidDriver driver = new AndroidDriver(url, capabilities);
+         Thread.sleep(5000);
+        
+//         driver.findElement(By.xpath("//android.widget.TextView[@text=\"SKIP\"]")).click();
+         Thread.sleep(2000);
+         driver.findElement(By.xpath("//android.widget.TextView[@text=\"Sign-in/Sign-up\"] ")).click();
+         System.out.println("Application started");
+//         driver.findElement(By.xpath("//android.widget.EditText[@text=\"Enter here\"]")).sendKeys("6200558678");
+//         driver.findElement(By.id("00000000-0000-0074-ffff-ffff00000000")).click();
+         
+         
+         
+         
+         
         // Your test code goes here
-
+     
         // Close the session
-        driver.quit();
+    
+//        mCurrentFocus=Window{1ebea78 u0 com.freekaamaalindia/com.freekaamaalindia.MainActivity}
     }
 }
 
