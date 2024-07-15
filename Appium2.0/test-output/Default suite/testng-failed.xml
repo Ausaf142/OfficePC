@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Generic_Utility.Base_Class">
+      <class name="Fkm_WEB_Chrome.Claim_Form">
         <methods>
           <include name="login"/>
+          <include name="claimForm"/>
         </methods>
-      </class> <!-- Generic_Utility.Base_Class -->
+      </class> <!-- Fkm_WEB_Chrome.Claim_Form -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
