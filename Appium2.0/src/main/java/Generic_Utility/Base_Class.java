@@ -24,6 +24,7 @@ public void login() throws MalformedURLException, InterruptedException {
 	cap.setCapability("platformVersion", "9");
 	cap.setCapability("automationName", "uiautomator2");
 	cap.setCapability("browserName", "Chrome");
+	cap.setCapability("autoGrantPermissions", true);
 	cap.setCapability("chromedriverExecutable", "C:\\Users\\Dell\\Downloads\\chromedriver\\chromedriver-win64\\chromedriver.exe");
 	
     URL url = URI.create("http://127.0.0.1:4723/").toURL();
