@@ -3,18 +3,24 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Fkm_WEB_Chrome.Claim_Form">
-        <methods>
-          <include name="login"/>
-          <include name="claimForm"/>
-        </methods>
-      </class> <!-- Fkm_WEB_Chrome.Claim_Form -->
       <class name="Fkm_WEB_Chrome.Notification_Search_ButtonFunction">
         <methods>
           <include name="notification"/>
           <include name="login"/>
         </methods>
       </class> <!-- Fkm_WEB_Chrome.Notification_Search_ButtonFunction -->
+      <class name="Fkm_WEB_Chrome.SearchBar">
+        <methods>
+          <include name="login"/>
+          <include name="serach"/>
+        </methods>
+      </class> <!-- Fkm_WEB_Chrome.SearchBar -->
+      <class name="Fkm_WEB_Chrome.ShopNow_DealPg">
+        <methods>
+          <include name="ShopNow_Deal"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Fkm_WEB_Chrome.ShopNow_DealPg -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

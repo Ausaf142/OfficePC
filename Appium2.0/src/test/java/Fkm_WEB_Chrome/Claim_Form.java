@@ -1,8 +1,7 @@
 package Fkm_WEB_Chrome;
-
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-
+import io.appium.java_client.MobileBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -11,12 +10,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
 import Generic_Utility.Base_Class;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
 public class Claim_Form extends Base_Class {
+	
 	public String store="cadburygifting";
 	public String Date="16 July 2024";
 @Test
@@ -63,19 +62,20 @@ public void claimForm() throws InterruptedException {
 	Thread.sleep(2000);
 	driver.findElement(By.id("fd7")).sendKeys("LIFE");
 	Thread.sleep(2000);
-	WebElement calender = wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//input[@aria-label='calendar']"))));
+    WebElement calender = wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//input[@aria-label='calendar']"))));
+//	WebElement calender = wait.until(ExpectedConditions.visibilityOf(driver.findElement (MobileBy.AccessibilityId("22 July 2024"))));
 	calender.click();
 	calender.click();
 	
-	
-	//android.view.View[@content-desc="20 July 2024"]
+
 //	WebElement selectDate = driver.findElement(By.xpath("//android.view.View[@content-desc='"+Date+"']"));
 //	WebElement selectDate = driver.findElement(By.xpath("//android.view.View[@content-desc='16 July 2024']"));
 //	WebElement date = wait.until(ExpectedConditions.visibilityOf(selectDate));
 //	date.click();
-	Thread.sleep(2000);
 //	WebElement set = driver.findElement(By.xpath("//android.widget.Button[@resource-id=\"android:id/button1\"]"));
-	WebElement setDate = wait.until(ExpectedConditions.presenceOfElementLocated((By.xpath("//android.widget.Button[@resource-id=\"android:id/button1\"]"))));
+	Thread.sleep(2000);
+	WebElement selectDate = driver.findElement(MobileBy.AccessibilityId("Date"));
+	WebElement setDate = wait.until(ExpectedConditions.presenceOfElementLocated((MobileBy.AccessibilityId("Date"))));
 	setDate.click();
 	
 	driver.findElement(By.id("fd9")).sendKeys("120");
@@ -89,7 +89,6 @@ public void claimForm() throws InterruptedException {
 	
 	file.sendKeys("./ss.png");
 	driver.findElement(By.xpath("//button[text()='Submit']")).click();
-	
 		
 }			
 public static void allowAppPermissions(AppiumDriver driver) {
