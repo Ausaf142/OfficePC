@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Fkm_WEB_Chrome.Deal_Story">
+      <class name="Fkm_WEB_Chrome.ReferEarnFunctionality">
         <methods>
-          <include name="story"/>
+          <include name="referEarn"/>
           <include name="login"/>
         </methods>
-      </class> <!-- Fkm_WEB_Chrome.Deal_Story -->
+      </class> <!-- Fkm_WEB_Chrome.ReferEarnFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
