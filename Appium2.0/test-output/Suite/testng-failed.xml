@@ -3,24 +3,24 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Fkm_WEB_Chrome.Notification_Search_ButtonFunction">
-        <methods>
-          <include name="notification"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- Fkm_WEB_Chrome.Notification_Search_ButtonFunction -->
-      <class name="Fkm_WEB_Chrome.SearchBar">
+      <class name="Fkm_WEB_Chrome.AddBank">
         <methods>
           <include name="login"/>
-          <include name="serach"/>
+          <include name="bank"/>
         </methods>
-      </class> <!-- Fkm_WEB_Chrome.SearchBar -->
-      <class name="Fkm_WEB_Chrome.ShopNow_DealPg">
+      </class> <!-- Fkm_WEB_Chrome.AddBank -->
+      <class name="Fkm_WEB_Chrome.WithdrawAmount">
         <methods>
-          <include name="ShopNow_Deal"/>
+          <include name="WithdrawCB"/>
           <include name="login"/>
         </methods>
-      </class> <!-- Fkm_WEB_Chrome.ShopNow_DealPg -->
+      </class> <!-- Fkm_WEB_Chrome.WithdrawAmount -->
+      <class name="Fkm_WEB_Chrome.EditProfile">
+        <methods>
+          <include name="profile"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Fkm_WEB_Chrome.EditProfile -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
