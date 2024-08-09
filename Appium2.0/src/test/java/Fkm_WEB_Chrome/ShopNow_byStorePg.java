@@ -8,10 +8,13 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import Generic_Utility.Base_Class;
+import Generic_Utility.Try;
 
 public class ShopNow_byStorePg extends Base_Class {
+	@Test(retryAnalyzer = Try.class)
 	public void ShopNow_Store() throws InterruptedException {
 
 

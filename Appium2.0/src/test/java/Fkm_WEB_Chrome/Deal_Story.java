@@ -1,6 +1,8 @@
 package Fkm_WEB_Chrome;
 
 import Generic_Utility.Base_Class;
+import Generic_Utility.Try;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +13,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class Deal_Story extends Base_Class {
-    @Test
+	@Test(retryAnalyzer = Try.class)
     public void story() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         WebElement story = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@class='dealstories-card'])[1]")));

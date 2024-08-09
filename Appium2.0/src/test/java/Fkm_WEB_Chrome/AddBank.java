@@ -11,10 +11,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import Generic_Utility.Base_Class;
+import Generic_Utility.Try;
 
 public class AddBank extends Base_Class {
 
-	@Test
+	@Test(retryAnalyzer = Try.class)
 public void bank() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		for(int i=0;i<3;i++) {

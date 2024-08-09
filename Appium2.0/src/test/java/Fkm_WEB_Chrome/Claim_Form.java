@@ -5,20 +5,22 @@ import io.appium.java_client.MobileBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import Generic_Utility.Base_Class;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
+import Generic_Utility.Try;
+
 
 public class Claim_Form extends Base_Class {
 	
-	public String store="cadburygifting";
-	public String Date="16 July 2024";
-@Test
+	public String store="tataaig";
+	public String Date="09-08-2024";
+	
+@Test(retryAnalyzer = Try.class)
 public void claimForm() throws InterruptedException {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	for(int i=0;i<3;i++) {
@@ -91,7 +93,7 @@ public void claimForm() throws InterruptedException {
 	driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		
 }			
-public static void allowAppPermissions(AppiumDriver driver) {
+public static void allowAppPermissions(WebDriver driver) {
     // Wait for the permission dialog to appear
     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 

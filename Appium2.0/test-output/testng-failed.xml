@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Fkm_WEB_Chrome.CategoriesFunctionality">
+      <class name="Generic_Utility.Listner">
         <methods>
-          <include name="category"/>
-          <include name="login"/>
+          <include name="onTestFailure"/>
         </methods>
-      </class> <!-- Fkm_WEB_Chrome.CategoriesFunctionality -->
+      </class> <!-- Generic_Utility.Listner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

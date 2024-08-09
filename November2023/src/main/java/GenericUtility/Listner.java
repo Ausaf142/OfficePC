@@ -17,7 +17,7 @@ public void onTestFailure (ITestResult result)
 	EventFiringWebDriver edriver = new EventFiringWebDriver(Base_Class.driver);
 	 File pic = edriver.getScreenshotAs(OutputType.FILE);
 	 try {
-		 File file =new File("./Pic/SS.png");
+		 File file =new File("./Pic/Mtd.png");
 		 Files.copy(pic, file);
 	 }
 	

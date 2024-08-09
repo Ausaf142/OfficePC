@@ -6,6 +6,7 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,7 +16,9 @@ import org.testng.annotations.BeforeMethod;
 import io.appium.java_client.android.AndroidDriver;
 
 public class Base_Class {
-	public AndroidDriver driver ;
+//	public AndroidDriver driver ;  
+	public static WebDriver driver; 
+	public  WebDriver edriver =null;
 @BeforeMethod
 public void login() throws MalformedURLException, InterruptedException {
 	DesiredCapabilities cap = new DesiredCapabilities();

@@ -11,11 +11,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import Generic_Utility.Base_Class;
+import Generic_Utility.Try;
 
 public class EditProfile extends Base_Class {
 	
 	public String name="Testing Account";
-@Test
+	@Test(retryAnalyzer = Try.class)
 public void  profile() throws InterruptedException {
 	
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));

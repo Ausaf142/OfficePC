@@ -4,7 +4,7 @@
   <artifactId>Appium2.0</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -65,7 +65,12 @@
     <artifactId>java-client</artifactId>
     <version>8.5.1</version>
 </dependency>
-  
-  
+
+
+  	<dependency>
+  		<groupId>Feb2024</groupId>
+  		<artifactId>Feb2024</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 </project>
