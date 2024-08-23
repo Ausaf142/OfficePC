@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="FKM.Account_Summary"/>
+      <class name="FKM.ShopNow_StoreDetail"/>
+      <class name="FKM.Cashback_History"/>
+      <class name="FKM.SearchBar_Functionality"/>
+      <class name="FKM.WebStory"/>
+      <class name="FKM.ShopNow_DealDetail"/>
+      <class name="FKM.Edit_profile"/>
+      <class name="FKM.Notification"/>
+      <class name="FKM.Report_Missing"/>
+      <class name="FKM.Claim_Form"/>
+      <class name="FKM.CouponsFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
